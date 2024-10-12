@@ -1,4 +1,4 @@
-package de.nmadev.domain.switcher.actions;
+package de.nmadev.domain.deprecator.actions;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;

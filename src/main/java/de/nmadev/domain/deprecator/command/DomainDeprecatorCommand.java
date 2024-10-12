@@ -11,12 +11,12 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class DomainSwitcherCommand extends Command {
-    public static final String PERMISSION = "domain-switcher.admin";
+public class DomainDeprecatorCommand extends Command {
+    public static final String PERMISSION = "domain-deprecator.admin";
 
     private final DomainDeprecator plugin;
 
-    public DomainSwitcherCommand(DomainDeprecator plugin) {
+    public DomainDeprecatorCommand(DomainDeprecator plugin) {
         super(plugin.getName());
         this.plugin = plugin;
         setPermission(PERMISSION);

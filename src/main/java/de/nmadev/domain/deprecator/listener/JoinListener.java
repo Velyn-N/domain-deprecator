@@ -1,8 +1,8 @@
-package de.nmadev.domain.switcher.listener;
+package de.nmadev.domain.deprecator.listener;
 
-import de.nmadev.domain.switcher.ConfigManager;
-import de.nmadev.domain.switcher.Scheduler;
-import de.nmadev.domain.switcher.actions.JoinMessageAction;
+import de.nmadev.domain.deprecator.ConfigManager;
+import de.nmadev.domain.deprecator.Scheduler;
+import de.nmadev.domain.deprecator.actions.JoinMessageAction;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

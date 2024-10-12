@@ -1,6 +1,6 @@
-package de.nmadev.domain.switcher;
+package de.nmadev.domain.deprecator;
 
-import de.nmadev.domain.switcher.actions.DomainAction;
+import de.nmadev.domain.deprecator.actions.DomainAction;
 import org.bukkit.configuration.ConfigurationSection;
 
 import java.util.*;

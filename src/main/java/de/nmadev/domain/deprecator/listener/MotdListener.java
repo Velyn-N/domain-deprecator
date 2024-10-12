@@ -1,7 +1,7 @@
-package de.nmadev.domain.switcher.listener;
+package de.nmadev.domain.deprecator.listener;
 
-import de.nmadev.domain.switcher.ConfigManager;
-import de.nmadev.domain.switcher.actions.MotdAction;
+import de.nmadev.domain.deprecator.ConfigManager;
+import de.nmadev.domain.deprecator.actions.MotdAction;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.server.ServerListPingEvent;

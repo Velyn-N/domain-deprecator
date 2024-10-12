@@ -1,8 +1,8 @@
-package de.nmadev.domain.switcher;
+package de.nmadev.domain.deprecator;
 
-import de.nmadev.domain.switcher.command.DomainSwitcherCommand;
-import de.nmadev.domain.switcher.listener.JoinListener;
-import de.nmadev.domain.switcher.listener.MotdListener;
+import de.nmadev.domain.deprecator.command.DomainDeprecatorCommand;
+import de.nmadev.domain.deprecator.listener.JoinListener;
+import de.nmadev.domain.deprecator.listener.MotdListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Logger;
@@ -28,7 +28,7 @@ public class DomainDeprecator extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new MotdListener(configManager), this);
         getServer().getPluginManager().registerEvents(new JoinListener(configManager, scheduler), this);
 
-        getServer().getCommandMap().register(this.getName(), new DomainSwitcherCommand(this));
+        getServer().getCommandMap().register(this.getName(), new DomainDeprecatorCommand(this));
     }
 
     public void reload() {

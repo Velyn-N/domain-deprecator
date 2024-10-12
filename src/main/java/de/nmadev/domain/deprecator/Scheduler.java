@@ -1,10 +1,10 @@
-package de.nmadev.domain.switcher;
+package de.nmadev.domain.deprecator;
 
 import org.bukkit.Bukkit;
 
 public class Scheduler {
 
-    private DomainDeprecator plugin;
+    private final DomainDeprecator plugin;
 
     public Scheduler(DomainDeprecator plugin) {
         this.plugin = plugin;

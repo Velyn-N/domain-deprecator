@@ -1,7 +1,22 @@
-both-worlds-activated-only: true
-storage-save-interval-minutes: 5
-enable-switch-world-command: true
-keep-default-nether-portal-behaviour: true
-activated-worlds:
-  - world
-  - world_nether
+# All Features can be deactivated on a per-Domain basis by leaving out their respective parts of this config.
+
+# This is the Domain the underlying values are used for.
+# The "default" Domain contains fallback values for players that do not use a specified Domain
+default:
+  # The "Message of the Day" (Text shown in the Server List).
+  # Supports MiniMessage Format: https://docs.advntr.dev/minimessage/format.html
+  motd: <gray>A Minecraft Server
+  # A Message send to the Players Chat after they join
+  joinmessage:
+    # The text that will be sent to the Player.
+    # Supports MiniMessage Format: https://docs.advntr.dev/minimessage/format.html
+    text: <yellow>Welcome back!
+    # Delay for the Text to be sent in seconds. Optional value.
+    # 0 or smaller sends the Message immediately
+    delay: 2
+
+# Copy the block above for all other domains you want to use, like this:
+localhost:
+  motd: <blue>Your local Minecraft Server<newline><rainbow>Just for you
+  joinmessage:
+    text: <green>Hello there!

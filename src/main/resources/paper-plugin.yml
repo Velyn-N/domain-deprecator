@@ -1,20 +1,10 @@
-name: worldtp
-description: Mini-Plugin that lets you switch worlds and remembers where you last were in them
+name: domain-deprecator
+description: Paper Plugin sending messages depending on the Domain used for Joining
 version: '${project.version}'
 authors:
   - Velyn
-main: de.nmadev.worldtp.WorldTP
+main: de.nmadev.domain.deprecator.DomainDeprecator
 api-version: '1.20'
-dependencies:
-  bootstrap:
-    ServerTap:
-      load: BEFORE
-      required: true
-      join-classpath: true
 permissions:
-  worldtp.use:
-    description: "Usage Permission (The Plugin will only affect these players)"
-  worldtp.switchworlds:
-    description: "Permission for the /switchworld Command (if activated)"
-  worldtp.admin:
-    description: "Permission for administrative functions"
+  domain-deprecator.admin:
+    description: Gives Access to the Plugins Administration Command
