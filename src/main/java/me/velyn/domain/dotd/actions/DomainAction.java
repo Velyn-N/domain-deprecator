@@ -1,4 +1,4 @@
-package de.nmadev.domain.deprecator.actions;
+package me.velyn.domain.dotd.actions;
 
 import org.bukkit.configuration.ConfigurationSection;
 

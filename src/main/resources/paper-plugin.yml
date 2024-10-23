@@ -1,10 +1,10 @@
-name: domain-deprecator
-description: Paper Plugin sending messages depending on the Domain used for Joining
+name: domain-of-the-day
+description: Paper Plugin sending different MOTDs or Messages depending on the Domain used by the Player
 version: '${project.version}'
 authors:
   - Velyn
-main: de.nmadev.domain.deprecator.DomainDeprecator
+main: me.velyn.domain.dotd.DotDMain
 api-version: '1.20'
 permissions:
-  domain-deprecator.admin:
-    description: Gives Access to the Plugins Administration Command
+  dotd.admin:
+    description: Gives Access to the Domain of the Day Administration Command

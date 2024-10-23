@@ -1,7 +1,8 @@
-package de.nmadev.domain.deprecator.actions;
+package me.velyn.domain.dotd.actions;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;
+import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
 import org.bukkit.configuration.ConfigurationSection;
 
 import java.util.Optional;
@@ -22,5 +23,12 @@ public final class MotdAction implements DomainAction {
             return Optional.of(this);
         }
         return Optional.empty();
+    }
+
+    @Override
+    public String toString() {
+        return "MotdAction{" +
+                "motd=" + PlainTextComponentSerializer.plainText().serialize(motd) +
+                '}';
     }
 }

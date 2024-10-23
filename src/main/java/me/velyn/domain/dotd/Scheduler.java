@@ -1,12 +1,12 @@
-package de.nmadev.domain.deprecator;
+package me.velyn.domain.dotd;
 
 import org.bukkit.Bukkit;
 
 public class Scheduler {
 
-    private final DomainDeprecator plugin;
+    private final DotDMain plugin;
 
-    public Scheduler(DomainDeprecator plugin) {
+    public Scheduler(DotDMain plugin) {
         this.plugin = plugin;
     }
 
